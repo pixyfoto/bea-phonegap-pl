@@ -355,7 +355,7 @@ public class PhotoLibraryService {
       // swap width and height if needed
       try {
         int orientation = getImageOrientation(new File(queryResult.getString("nativeURL")));
-          queryResult.put("orientation", orientation);
+          //queryResult.put("orientation", orientation);
         if (isOrientationSwapsDimensions(orientation)) { // swap width and height
           int tempWidth = queryResult.getInt("width");
           queryResult.put("width", queryResult.getInt("height"));
